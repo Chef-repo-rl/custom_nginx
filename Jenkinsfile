@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Foodcritic') {
-            steps {
-                sh "foodcritic ."
-            }
-        }
         stage('cookstyle') {
             steps {
             echo "running cookstyle"
